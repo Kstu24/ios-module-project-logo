@@ -10,20 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var logo: UIView!
-    
+    @IBOutlet weak var logo: Logo!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        roundedEdges()
-        
         
     }
     
-    @IBOutlet var youtubeBackroundView: UIView!
-    
-    func roundedEdges() {
-        youtubeBackroundView.layer.cornerRadius = 50
-        
+    func roundEdges() {
+        logo.layer.cornerRadius = 12
     }
     
 }

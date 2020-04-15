@@ -15,24 +15,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tly-Xk-nHC">
-                                <rect key="frame" x="16" y="319" width="382" height="259"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6cG-S4-Ldu" customClass="Logo" customModule="Logo" customModuleProvider="target">
-                                        <rect key="frame" x="142" y="66" width="99" height="126"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2S-ZG-n46" customClass="Logo" customModule="Logo" customModuleProvider="target">
+                                <rect key="frame" x="39" y="189" width="337" height="518"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="518" id="9rY-T4-bNm"/>
+                                    <constraint firstAttribute="width" constant="337" id="dO5-h7-0NR"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d2S-ZG-n46" secondAttribute="bottom" constant="155" id="0gd-Va-hm1"/>
+                            <constraint firstItem="d2S-ZG-n46" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="145" id="CFm-G5-bbV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d2S-ZG-n46" secondAttribute="trailing" constant="38" id="D0y-TB-txV"/>
+                            <constraint firstItem="d2S-ZG-n46" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="wKx-9y-8zb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="youtubeBackroundView" destination="Tly-Xk-nHC" id="ZQ1-Ay-y4z"/>
+                        <outlet property="logo" destination="d2S-ZG-n46" id="tdf-Mi-x92"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
